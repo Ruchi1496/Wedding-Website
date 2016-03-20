@@ -1,0 +1,123 @@
+html,body{
+	font-family: "Lato";
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.header{
+	background-image: url('C:/Users/RMK/Documents/WebDev/Wedding Website/wedding-plan.jpg');
+	height:800px;
+	width: 100%;
+}
+.cornered{
+	width: 100%;
+	height: 0px;
+	border-bottom:1500px solid transparent;
+    border-left: 800px solid white;
+}
+.font{
+	letter-spacing: 1px;
+	color: #0ca5a5;
+	font-weight:lighter;
+	text-align: center;
+	margin-top: 0px;
+	padding-top:45px;
+	font-size: 200%;
+}
+.title{
+	font-size: 280%;
+	letter-spacing: 2px;
+	color: #0ca5a5;
+	font-weight:lighter;
+	padding-left: 70px; 
+	text-align: left
+}
+#title{
+	margin-top: 300px;
+	float: left;
+	font-weight: lighter;
+	
+}
+#own{
+	background-color: #0ca5a5; 
+	color:white;
+	font-size: 18px;
+ 	margin-left:70px;
+ 	height:50px; 
+	width:190px;
+}
+.basicFeatures{
+	height: 700px;
+	width: 100%;
+	background-color: #e6e6e6;
+	margin: auto;
+}
+.feature h3{
+	color: #595959;
+	letter-spacing: 1.5px;
+	font-size: 22px;
+	padding-top: 20px;
+}
+.feature{
+	display: inline-block;
+	float: left;
+	padding-left: 80px;
+	padding-top: 120px;
+	margin: auto;
+	width: 250px;
+	height: 50px;
+	color: #999999;
+}
+.basicFeatureImg{
+	float: left;
+	display: inline-block;
+	height: 500px;
+	width: 330px;
+}
+.advanceFeatures{
+	height: 700px;
+	width: 100%;
+	margin: auto;
+}
+.advanceFeatureImg{
+	float: left;
+	display: inline-block;
+	margin-top:-75px;
+	height: 580px;
+	width: 350px;
+}
+.block{
+	display: inline-block;
+	width: 300px;
+	height: 500px;
+	padding-left: 100px;
+}
+.footer{
+	height:250px;
+	width: 100%;
+	margin: auto;
+	background-color: #e6e6e6;
+}
+form{
+	padding-top: 30px;
+}
+input[type=text] {
+	width: 450px;
+	height: 55px;
+	padding: 12px 20px;
+	border:2px solid #0ca5a5;
+	color:#10d5d5;
+	font-size: 20px;
+	font-weight: lighter;
+	background-color:#e6e6e6;
+	margin-left: 40px;
+}
+input[type=submit]{
+	height: 55px;
+	width: 200px;
+	margin-left: 40px;
+	background-color:#0ca5a5; 
+	color:white;
+	font-size: 20px;
+}
