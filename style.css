@@ -6,23 +6,32 @@ html,body{
 	overflow-y: auto;
 }
 .header{
-	background-image: url('C:/Users/RMK/Documents/WebDev/Wedding Website/wedding-plan.jpg');
-	height:800px;
+	background-image: url('C:/Users/RMK/Documents/WebDev/Wedding_Website/wedding-plan.jpg');
+	height:120%;
 	width: 100%;
+	background-size:cover;
+	background-position: center center;
+	overflow: hidden;
+	position: relative;
 }
-.cornered{
+.header::before{
+	content: '';
+	height: 100%;
+	text-align: center;
+	padding-top: 30%;
+	padding-left: 5%;
+	position: absolute;
 	width: 100%;
-	height: 0px;
-	border-bottom:1500px solid transparent;
-    border-left: 800px solid white;
+	background-color: white;
+	transform:translateX(-60%) skew(-30deg);
 }
 .font{
 	letter-spacing: 1px;
 	color: #0ca5a5;
 	font-weight:lighter;
 	text-align: center;
-	margin-top: 0px;
-	padding-top:45px;
+	margin-top: 0%;
+	padding-top:5%;
 	font-size: 200%;
 }
 .title{
@@ -30,11 +39,13 @@ html,body{
 	letter-spacing: 2px;
 	color: #0ca5a5;
 	font-weight:lighter;
-	padding-left: 70px; 
+	padding-left: 10%; 
 	text-align: left
 }
 #title{
-	margin-top: 300px;
+	position: relative;
+	margin-left: 5%;
+	margin-top: 25%;
 	float: left;
 	font-weight: lighter;
 	
@@ -42,82 +53,154 @@ html,body{
 #own{
 	background-color: #0ca5a5; 
 	color:white;
-	font-size: 18px;
- 	margin-left:70px;
- 	height:50px; 
-	width:190px;
+	font-size: 150%;
+ 	margin-left:10%;
+ 	height:7%; 
+	width:40%;
+	border:none;
+	cursor: pointer;
 }
 .basicFeatures{
-	height: 700px;
+	height: 120%;
 	width: 100%;
 	background-color: #e6e6e6;
 	margin: auto;
 }
 .feature h3{
 	color: #595959;
-	letter-spacing: 1.5px;
-	font-size: 22px;
-	padding-top: 20px;
+	letter-spacing: 5%;
+	font-size: 145%;
+	margin-bottom: 2%;
 }
 .feature{
 	display: inline-block;
 	float: left;
-	padding-left: 80px;
-	padding-top: 120px;
+	padding-left: 22%;
+	padding-top: 43%;
 	margin: auto;
-	width: 250px;
-	height: 50px;
+	width: 82.7%;
+	height: 10%;
 	color: #999999;
+	font-size:102%;
 }
 .basicFeatureImg{
 	float: left;
 	display: inline-block;
-	height: 500px;
-	width: 330px;
+	height: 120%;
+	width: 100%;
 }
 .advanceFeatures{
-	height: 700px;
+	height: 120%;
 	width: 100%;
 	margin: auto;
 }
 .advanceFeatureImg{
 	float: left;
 	display: inline-block;
-	margin-top:-75px;
-	height: 580px;
-	width: 350px;
+	margin-top:-20%;
+	height: 130%;
+	width: 115%;
 }
 .block{
 	display: inline-block;
-	width: 300px;
-	height: 500px;
-	padding-left: 100px;
+	width: 25%;
+	height: 65%;
+	padding-left: 8%;
 }
 .footer{
-	height:250px;
+	height:40%;
 	width: 100%;
 	margin: auto;
 	background-color: #e6e6e6;
 }
 form{
-	padding-top: 30px;
+	padding-top: 2%;
 }
 input[type=text] {
-	width: 450px;
-	height: 55px;
+	width: 32%;
+	height: 21%;
 	padding: 12px 20px;
 	border:2px solid #0ca5a5;
-	color:#10d5d5;
-	font-size: 20px;
+	color:#0ca5a5;
+	opacity: 0.5;
+	font-size: 120%;
 	font-weight: lighter;
 	background-color:#e6e6e6;
-	margin-left: 40px;
+	margin-left: 3%;
 }
 input[type=submit]{
-	height: 55px;
-	width: 200px;
-	margin-left: 40px;
+	height: 21%;
+	width: 17%;
+	margin-left: 3%;
 	background-color:#0ca5a5; 
 	color:white;
-	font-size: 20px;
+	font-size: 120%;
+	border:none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+	.basicFeatures{
+		width:100%;
+		height: 330%;
+	}
+    .block{
+	width: 100%;
+	margin: auto;
+	padding: 0px; 
+	height: 30%;
+	margin-top: 2%;
+	box-sizing:border-box;
+	}	
+	.block2{
+		margin-left: 15%;
+		margin-top: -10%;
+	}
+	.feature h3{
+		padding-bottom: -10%;
+	}
+	.feature{
+	width: 50%;
+	margin: auto;
+	text-align: left;
+	padding-top: 10%;
+	margin-bottom: 7%;
+	height: 10%;
+	font-size:102%;
+	}
+	.basicFeatureImg{
+	height: 80%;
+	width: 50%;
+	margin-top: 0%;
+	padding-left: 30%;
+	}
+	.advanceFeatures{
+	
+	width: 100%;
+	height: 350%;
+	margin: auto;
+	}
+	.advanceFeatureImg{
+	margin-top:-15%;
+	margin-left: -8%;
+	height: 110%;
+	width: 55%;
+	}
+	.block4{
+		margin-left: 6%;
+		margin-top: -8%;
+	}
+	.footer{
+		height: 70%;
+	}
+	input[type=text] {
+	width: 40%;
+	height: 15%;
+	margin-left: 0px;
+	}
+	input[type=submit]{
+	margin-left: 45%;
+	margin-top: 2%;
+	width: 20%;
+	}
 }
