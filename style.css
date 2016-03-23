@@ -103,6 +103,7 @@ html,body{
 	height: 120%;
 	width: 100%;
 	margin: auto;
+	overflow:hidden;
 }
 .advanceFeatureImg{
 	float: left;
