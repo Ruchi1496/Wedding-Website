@@ -6,7 +6,7 @@ html,body{
 	overflow-y: auto;
 }
 .header{
-	background-image: url('C:/Users/RMK/Documents/WebDev/Wedding_Website/wedding-plan.jpg');
+	background-image: url('wedding-plan.jpg');
 	height:120%;
 	width: 100%;
 	background-size:cover;
@@ -82,11 +82,21 @@ html,body{
 	height: 10%;
 	color: #999999;
 	font-size:102%;
+	clear: both;
+}
+.feature1{
+	text-align:right;
+}
+#feature5{
+	padding-top:0px;
+}
+#feature8{
+	padding-top:0px;
 }
 .basicFeatureImg{
 	float: left;
 	display: inline-block;
-	height: 120%;
+	height: 110%;
 	width: 100%;
 }
 .advanceFeatures{
@@ -98,14 +108,34 @@ html,body{
 	float: left;
 	display: inline-block;
 	margin-top:-20%;
-	height: 130%;
+	height: 120%;
 	width: 115%;
+	padding-left:30px
+}
+#block1{
+	padding-left:3%;
+}
+#block2{
+	padding-left:0px;
+}
+#block3{
+	padding-left:9%;
+}
+#block4{
+	padding-left:4%;
 }
 .block{
 	display: inline-block;
 	width: 25%;
 	height: 65%;
 	padding-left: 8%;
+}
+#advancefont{
+	padding-left:350px;
+}
+#blockimg{
+	margin-top:0px;
+	padding-left:7%;
 }
 .footer{
 	height:40%;
@@ -138,8 +168,13 @@ input[type=submit]{
 	border:none;
 	cursor: pointer;
 }
+@media only screen and (max-width: 900px) {
+	.feature{
+		padding-top: 80%;
+	}
 
-@media only screen and (max-width: 780px) {
+}
+@media only screen and (max-width: 760px) {
 	.basicFeatures{
 		width:100%;
 		height: 330%;
@@ -150,8 +185,13 @@ input[type=submit]{
 	padding: 0px; 
 	height: 30%;
 	margin-top: 2%;
+	overflow: auto;
 	box-sizing:border-box;
+
 	}	
+	.block1{
+		margin-left:15% ;
+	}
 	.block2{
 		margin-left: 15%;
 		margin-top: -10%;
@@ -160,7 +200,7 @@ input[type=submit]{
 		padding-bottom: -10%;
 	}
 	.feature{
-	width: 50%;
+	width: 55%;
 	margin: auto;
 	text-align: left;
 	padding-top: 10%;
@@ -169,7 +209,7 @@ input[type=submit]{
 	font-size:102%;
 	}
 	.basicFeatureImg{
-	height: 80%;
+	height: 90%;
 	width: 50%;
 	margin-top: 0%;
 	padding-left: 30%;
@@ -177,7 +217,7 @@ input[type=submit]{
 	.advanceFeatures{
 	
 	width: 100%;
-	height: 350%;
+	height: 380%;
 	margin: auto;
 	}
 	.advanceFeatureImg{
@@ -188,7 +228,7 @@ input[type=submit]{
 	}
 	.block4{
 		margin-left: 6%;
-		margin-top: -8%;
+		margin-top: 0%;
 	}
 	.footer{
 		height: 70%;
